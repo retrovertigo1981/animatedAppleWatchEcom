@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#404040,#151415);
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 300px;
+    width: 400px;
+    height: 320px;
+    background: #fa215e;
+    z-index: 1;
+    transition: 1s;
+}
+
+.banner.active::before {
+    top: 0;
+    left: 0;
+    width:50%;
+    height: 100%;
+    background: #151415;
+    z-index: 999;
+}
+
+.banner.active::after {
+    bottom: 0;
+    right: 0;
+    width:50%;
+    height: 100%;
+    background: #151415;
+    z-index: 999;
+}
+
+.banner::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    width: 400px;
+    height: 200px;
+    background: #aeff0f;
+    z-index: 1;
+    transition: 1s;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+header .logo {
+    font-size: 2em;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.5s;
+    transform-origin: right;
+}
+
+.toggle {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: url(/assets/menu.png) center no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+}
+
+.toggle.active {
+    
+    background: url(/assets/close.png) center no-repeat;
+    background-size: 25px;
+    
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    transform-origin: right;
+}
+
+.content .contentBx {
+    max-width: 600px;
+
+}
+
+.content .contentBx h2{
+    font-size: 4em;
+    line-height: 1em;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+.content .contentBx p{
+    font-size: 1em;
+    color: #fff;
+    margin: 20px 0;
+
+}
+
+.content .contentBx a{
+    display: inline-block;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+
+}
+
+.content .contentBx a:hover {
+    letter-spacing: 4px;
+    background: #fff;
+    color: #111;
+
+}
+
+.content .imgBx img {
+    max-width: 100%;
+    min-width: 400px;
+}
