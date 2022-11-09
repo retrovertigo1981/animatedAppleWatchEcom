@@ -15,7 +15,29 @@
     padding: 0 100px;
     display: flex;
     align-items: center;
-    background: linear-gradient(#404040,#151415);
+
+    background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+    background-size: 400%;
+    animation: animatedBg 10s infinite;
+
+
+    /* background: linear-gradient(#404040,#151415); */
+}
+
+@keyframes animatedBg {
+    
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+    
 }
 
 .banner::before {
@@ -276,6 +298,25 @@ header .logo {
 
     .content .contentBx p{
         font-size: 0.8em;
+        
+        margin: 20px 0;
+    
+    }
+}
+
+@media (min-width: 1800px) {
+    .banner {
+        padding: 0 500px;
+    }
+
+    .content .contentBx h2{
+        font-size: 6em;
+        line-height: 1em;
+         
+    }
+    
+    .content .contentBx p{
+        font-size: 2em;
         
         margin: 20px 0;
     
