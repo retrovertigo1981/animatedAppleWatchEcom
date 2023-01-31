@@ -16,28 +16,42 @@
     display: flex;
     align-items: center;
 
-    background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
-    background-size: 400%;
-    animation: animatedBg 10s infinite;
+    background-image: linear-gradient(
+        145deg, 
+        #0073ff 0, 
+        #2069ff 12.5%, 
+        #6f5dff 25%, 
+        #974eff 37.5%, 
+        #b53cf2 50%, 
+        #cc22e1 62.5%, 
+        #df00cf 75%, 
+        #ee00bb 87.5%, 
+        #f900a7 100%
+        );
+
+    background-size: 200% 200%;
+   
+
+    animation: animatedBg 8s ease infinite; 
 
 
-    /* background: linear-gradient(#404040,#151415); */
+    
 }
 
 @keyframes animatedBg {
     
     0% {
-        background-position: 0% 50%;
+        background-position: 0 50%;
     }
 
     50% {
-        background-position: 100% 50%;
+        background-position: 50% 100%;
     }
 
     100% {
-        background-position: 0% 50%;
+        background-position: 0 50%;
     }
-    
+     
 }
 
 .banner::before {
