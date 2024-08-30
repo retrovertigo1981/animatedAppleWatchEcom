@@ -127,13 +127,13 @@ header .logo {
   position: relative;
   width: 30px;
   height: 30px;
-  background: url(/assets/menu.png) center no-repeat;
+  background: url(./assets/menu.png) center no-repeat;
   background-size: 30px;
   cursor: pointer;
 }
 
 .toggle.active {
-  background: url(/assets/close.png) center no-repeat;
+  background: url(./assets/close.png) center no-repeat;
   background-size: 25px;
 }
 
